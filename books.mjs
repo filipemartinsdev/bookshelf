@@ -66,7 +66,7 @@ export const booksList = [
         image: "./src/book-nosufoco.jpg",
         title: "No sufoco",
         author: "Chuck Palahniuk",
-        rating: "7.9",
+        rating: "7.5",
         note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
     },
     {
