@@ -291,9 +291,9 @@ main {
     display: flex;
     align-items: center;
     
-    & .icon-check {
-        color: rgba(7, 136, 42, 0.65);
-    }
+}
+.icon-check {
+    color: rgba(7, 136, 42, 0.65);
 }
     
 .book-note {
