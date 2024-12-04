@@ -171,7 +171,7 @@ main {
     
     display: flex;
     flex-direction: row;
-    width: 35rem;
+    width: 38rem;
     
     cursor: default;
     
@@ -259,7 +259,7 @@ main {
     width: 1rem;
     height: 1rem;
     border-radius: 99rem;
-    background-color: tomato;
+    background-color: #dc4e49;
     /* line-height: 0; */
     
     /* outline: 2px solid black; */
@@ -280,7 +280,7 @@ main {
     width: 1rem;
     height: 1rem;
     border-radius: 99rem;
-    background-color: rgb(127, 136, 239);
+    background-color: #2E7CD1;
     /* line-height: 0; */
 
     animation-name: iconReading;
@@ -291,7 +291,8 @@ main {
     width: 1rem;
     height: 1rem;
     border-radius: 99rem;
-    background-color: rgb(153, 241, 20);
+    background-color: #2ebd78;
+    /* outline: 3px solid rgba(45, 153, 101, 0.3); */
     /* line-height: 0; */
 }
 
