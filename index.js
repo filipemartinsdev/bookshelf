@@ -72,7 +72,6 @@ const displayBooks = () => {
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
-
                 <div class="container-card-info">
                     <span class="book-title">
                         ${book.title}
@@ -92,7 +91,7 @@ const displayBooks = () => {
                     <span class="book-note">
                         ${book.note}
                     </span>
-                </div>`
+                </div>`;
         }
     }
 }
@@ -169,7 +168,7 @@ const searchBook = () => {
                     </div>`;
                 }
 
-                if(bookStatus === "rading") {
+                if(bookStatus === "reading") {
                     booksOutput.innerHTML += `<div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
