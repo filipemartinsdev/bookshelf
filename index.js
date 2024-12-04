@@ -24,7 +24,14 @@ const displayBooks = () => {
                         ${book.author}
                     </span>
                     <span class="book-status">
-                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        <span class="book-status-label">
+                            Status:
+                        </span>
+                        <span class="book-status-response">
+                            ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
+                        </span>
+
                     </span>
                     <span class="book-rating">
                         Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
