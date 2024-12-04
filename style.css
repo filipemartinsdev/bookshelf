@@ -247,9 +247,7 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-.book-status-label {
 
-}
 .book-status-response {
     display: flex;
     align-items: center;
