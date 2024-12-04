@@ -76,4 +76,11 @@ export const booksList = [
         rating: "-",
         note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
     },
+    {
+        image: "./src/book-aconvocacao.jpg",
+        title: "A convocação",
+        author: "Peadar O'Guilin",
+        rating: "-",
+        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+    },
 ]
