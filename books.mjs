@@ -29,7 +29,7 @@ export const booksList = [
         author: "George R.R. Martin",
         status: "read",
         rating: "8.5",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: "Uma magnífica obra, ambientada no universo da Crônicas de Gelo e Fogo."
     },
     {
         image: "./src/book-1984.jpg",

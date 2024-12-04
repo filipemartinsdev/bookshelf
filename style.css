@@ -175,7 +175,7 @@ main {
     
     cursor: default;
     
-    transition: filter .2s, scale .2s, box-shadow .2s;
+    transition: scale .15s, box-shadow .15s;
     transition-delay: .2s;
 }
 .card:hover {
