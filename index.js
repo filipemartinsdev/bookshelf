@@ -2,11 +2,15 @@ import { booksList } from "./books.mjs";
 
 const inputSearch = document.querySelector(".input-search")
 const searchButton = document.querySelector(".button-search")
-
 const booksOutput = document.querySelector(".container-cards");
+const containerReading = document.querySelector(".container-readingbooks");
+
 const displayBooks = () => {
-    for(let book of booksList){
-        booksOutput.innerHTML += `
+    for (let book of booksList) {
+        const bookStatus = book.status;
+
+        if(bookStatus === "read") {
+            booksOutput.innerHTML += `
             <div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
@@ -19,14 +23,53 @@ const displayBooks = () => {
                     <span class="book-author">
                         ${book.author}
                     </span>
+                    <span class="book-status">
+                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                    </span>
                     <span class="book-rating">
                         Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
                     </span>
                     <span class="book-note">
                     ${book.note}
                     </span>
+                </div>`;
+        } else if( bookStatus === "unread") {
+            booksOutput.innerHTML += `
+            <div class="card">
+                <div class="container-card-image">
+                    <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
-        `
+
+                <div class="container-card-info">
+                    <span class="book-title">
+                        ${book.title}
+                    </span>
+                    <span class="book-author">
+                        ${book.author}
+                    </span>
+                    <span class="book-status">
+                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                    </span>
+                </div>`
+        } else if( bookStatus === "reading"){
+            containerReading.innerHTML += `
+            <div class="card">
+                <div class="container-card-image">
+                    <img class="card-image" src="${book.image}" alt="book-image">
+                </div>
+
+                <div class="container-card-info">
+                    <span class="book-title">
+                        ${book.title}
+                    </span>
+                    <span class="book-author">
+                        ${book.author}
+                    </span>
+                    <span class="book-status">
+                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                    </span>
+                </div>`
+        }
     }
 }
 
@@ -38,8 +81,11 @@ const searchBook = () => {
     booksOutput.innerHTML = ''
     const responseList = []
 
-    for(let book of booksList){
-        if(book.title.toUpperCase().includes(inputSearch.value.toUpperCase())){
+    for (let book of booksList) {
+        const bookStatus = book.status;
+        containerReading.innerHTML = ""
+
+        if (book.title.toUpperCase().includes(inputSearch.value.toUpperCase())) {
             booksOutput.innerHTML += `<div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
@@ -51,6 +97,9 @@ const searchBook = () => {
                     </span>
                     <span class="book-author">
                         ${book.author}
+                    </span>
+                    <span class="book-status">
+                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
                     </span>
                     <span class="book-rating">
                         Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
@@ -65,7 +114,7 @@ const searchBook = () => {
     }
     console.log("end")
 
-    if(responseList.length === 0){
+    if (responseList.length === 0) {
         console.log("No response")
 
         booksOutput.innerHTML = `
@@ -81,8 +130,8 @@ const searchBook = () => {
 const eventKeyHandle = (event) => {
     console.clear()
     console.log(event)
-    if(event.key === "Enter"){
-        if(document.activeElement === inputSearch){
+    if (event.key === "Enter") {
+        if (document.activeElement === inputSearch) {
             searchBook(inputSearch.value)
         }
     }
