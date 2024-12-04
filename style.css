@@ -154,7 +154,7 @@ main {
         & .card {
             overflow: hidden;
             background-color: white;
-            border: 2px solid rgba(0, 0, 0, .15);
+            border: 1px solid rgba(0, 0, 0, .2);
             border-radius: 1rem;
 
             display: flex;
@@ -168,7 +168,7 @@ main {
             :hover& {
                 filter: none;
                 scale: 1.05;
-                box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .1);
+                box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .1);
             }
             & .container-card-image {
                 /* border: 1px solid red; */
