@@ -235,7 +235,7 @@ main {
     font-size: 1.6rem;
     text-transform: capitalize;
     color: rgba(0, 0, 0, .7);
-    line-height: .5rem;
+    /* line-height: .5rem; */
     
     display: flex;
     align-items: center;
@@ -246,6 +246,14 @@ main {
 .book-status {
     display: flex;
     flex-wrap: wrap;
+}
+.book-status-label {
+
+}
+.book-status-response {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 .book-status .icon-unread {
     width: 1rem;
