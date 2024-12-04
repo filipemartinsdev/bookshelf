@@ -129,7 +129,7 @@ main {
     color: var(--color-light2);
 }
 
-/* OUTPUT BOOKS */
+/* -------- OUTPUT BOOKS -------- */
 
 .container-readingbooks {
     width: 100%;
@@ -177,7 +177,6 @@ main {
     cursor: default;
     
     transition: filter .2s, scale .2s, box-shadow .2s;
-    
     transition-delay: .2s;
 }
 .card:hover {
