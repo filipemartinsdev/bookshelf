@@ -24,7 +24,13 @@ const displayBooks = () => {
                         ${book.author}
                     </span>
                     <span class="book-status">
-                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        <span class="book-status-label">
+                            Status:
+                        </span>
+                        <span class="book-status-response">
+                            ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
+                        </span>
                     </span>
                     <span class="book-rating">
                         Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
@@ -48,7 +54,13 @@ const displayBooks = () => {
                         ${book.author}
                     </span>
                     <span class="book-status">
-                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        <span class="book-status-label">
+                            Status:
+                        </span>
+                        <span class="book-status-response">
+                            ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
+                        </span>
                     </span>
                     <span class="book-note">
                         ${book.note}
@@ -60,7 +72,6 @@ const displayBooks = () => {
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
-
                 <div class="container-card-info">
                     <span class="book-title">
                         ${book.title}
@@ -69,12 +80,18 @@ const displayBooks = () => {
                         ${book.author}
                     </span>
                     <span class="book-status">
-                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        <span class="book-status-label">
+                            Status:
+                        </span>
+                        <span class="book-status-response">
+                            ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
+                        </span>
                     </span>
                     <span class="book-note">
                         ${book.note}
                     </span>
-                </div>`
+                </div>`;
         }
     }
 }
@@ -106,8 +123,14 @@ const searchBook = () => {
                             ${book.author}
                         </span>
                         <span class="book-status">
-                            Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
                         </span>
+                    </span>
                         <span class="book-rating">
                             Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
                         </span>
@@ -131,7 +154,13 @@ const searchBook = () => {
                             ${book.author}
                         </span>
                         <span class="book-status">
-                            Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
+                        </span>
                         </span>
                         <span class="book-note">
                         ${book.note}
@@ -139,7 +168,7 @@ const searchBook = () => {
                     </div>`;
                 }
 
-                if(bookStatus === "rading") {
+                if(bookStatus === "reading") {
                     booksOutput.innerHTML += `<div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
@@ -153,7 +182,13 @@ const searchBook = () => {
                         ${book.author}
                     </span>
                     <span class="book-status">
-                        Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        <span class="book-status-label">
+                            Status:
+                        </span>
+                        <span class="book-status-response">
+                            ${bookStatus}  
+                            <div class="icon-${bookStatus}"></div> 
+                        </span>
                     </span>
                     <span class="book-note">
                         ${book.note}

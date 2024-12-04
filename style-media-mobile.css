@@ -1,0 +1,40 @@
+.section-top h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.container-input-search {
+    width: 35rem;
+    margin: auto;
+}
+
+.container-readingbooks {
+    justify-content: center;
+}
+
+.container-cards {
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    width: 40rem;
+    border: 2px solid rgba(0, 0, 0, .2);   
+}
+
+.card .book-title {
+    font-size: 2.5rem;
+}
+
+.card .book-author {
+    font-size: 1.8rem;
+}
+.card .book-status, .card .book-rating {
+    font-size: 2rem;
+    flex-wrap: wrap;
+}
+
+.card .book-note {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
