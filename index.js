@@ -30,7 +30,7 @@ const displayBooks = () => {
                         Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
                     </span>
                     <span class="book-note">
-                    ${book.note}
+                        ${book.note}
                     </span>
                 </div>`;
         } else if( bookStatus === "unread") {
@@ -50,6 +50,9 @@ const displayBooks = () => {
                     <span class="book-status">
                         Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
                     </span>
+                    <span class="book-note">
+                        ${book.note}
+                    </span>
                 </div>`
         } else if( bookStatus === "reading"){
             containerReading.innerHTML += `
@@ -67,6 +70,9 @@ const displayBooks = () => {
                     </span>
                     <span class="book-status">
                         Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                    </span>
+                    <span class="book-note">
+                        ${book.note}
                     </span>
                 </div>`
         }
@@ -86,7 +92,55 @@ const searchBook = () => {
         containerReading.innerHTML = ""
 
         if (book.title.toUpperCase().includes(inputSearch.value.toUpperCase())) {
-            booksOutput.innerHTML += `<div class="card">
+            if(bookStatus === "read") {
+                booksOutput.innerHTML += `<div class="card">
+                    <div class="container-card-image">
+                        <img class="card-image" src="${book.image}" alt="book-image">
+                    </div>
+
+                    <div class="container-card-info">
+                        <span class="book-title">
+                            ${book.title}
+                        </span>
+                        <span class="book-author">
+                            ${book.author}
+                        </span>
+                        <span class="book-status">
+                            Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        </span>
+                        <span class="book-rating">
+                            Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
+                        </span>
+                        <span class="book-note">
+                            ${book.note}
+                        </span>
+                    </div>`;
+                }
+
+                if(bookStatus === "unread"){
+                    booksOutput.innerHTML += `<div class="card">
+                    <div class="container-card-image">
+                        <img class="card-image" src="${book.image}" alt="book-image">
+                    </div>
+    
+                    <div class="container-card-info">
+                        <span class="book-title">
+                            ${book.title}
+                        </span>
+                        <span class="book-author">
+                            ${book.author}
+                        </span>
+                        <span class="book-status">
+                            Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
+                        </span>
+                        <span class="book-note">
+                        ${book.note}
+                        </span>
+                    </div>`;
+                }
+
+                if(bookStatus === "rading") {
+                    booksOutput.innerHTML += `<div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
@@ -101,13 +155,12 @@ const searchBook = () => {
                     <span class="book-status">
                         Status: ${bookStatus} <div class="icon-${bookStatus}"></div>
                     </span>
-                    <span class="book-rating">
-                        Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
-                    </span>
                     <span class="book-note">
-                    ${book.note}
+                        ${book.note}
                     </span>
                 </div>`;
+                }
+
             console.log(book.title)
             responseList.push(book.title)
         }

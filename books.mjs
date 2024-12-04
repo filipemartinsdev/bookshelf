@@ -5,7 +5,7 @@ export const booksList = [
         author: "Jackeline Wisnpear",
         status: "reading",
         rating: "-",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: "Uma trama detetive, com a protagonista Maisie Dobbs."
     },
     {
         image: "./src/book-aconvocacao.jpg",
@@ -13,7 +13,7 @@ export const booksList = [
         author: "Peadar O'Guilin",
         status: "unread",//
         rating: "-",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: ""
     },
     {
         image: "./src/book-nosufoco.jpg",
