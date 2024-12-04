@@ -11,4 +11,4 @@ A "Exposição virtual" dos meus livros serve como meu treino/estudo com as segu
   CSS
   - Classes utilitárias
 
-![image](https://github.com/user-attachments/assets/73b35eed-c756-4748-a39e-b370e898ca2d)
+![image](https://github.com/user-attachments/assets/7fd063d2-50f1-4820-bf52-7f8cf318a8b7)
