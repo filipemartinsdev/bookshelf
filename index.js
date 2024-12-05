@@ -8,6 +8,15 @@ const containerReading = document.querySelector(".container-readingbooks");
 const displayBooks = () => {
     for (let book of booksList) {
         const bookStatus = book.status;
+        const rate = book.rating
+        let rateColor
+        if(rate < 5){
+            rateColor = "red"
+        } else if(rate >= 4 && rate <= 7){
+            rateColor = "yellow"
+        } else if(rate > 7){
+            rateColor = "green"
+        }
 
         if(bookStatus === "read") {
             booksOutput.innerHTML += `
@@ -32,7 +41,7 @@ const displayBooks = () => {
                             <div class="icon-${bookStatus}"></div> 
                         </span>
                     </span>
-                    <span class="book-rating">
+                    <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
                         Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
                     </span>
                     <span class="book-note">
@@ -108,6 +117,16 @@ const searchBook = () => {
         const bookStatus = book.status;
         containerReading.innerHTML = ""
 
+        const rate = book.rating
+        let rateColor
+        if(rate < 5){
+            rateColor = "red"
+        } else if(rate >= 4 && rate <= 7){
+            rateColor = "yellow"
+        } else if(rate > 7){
+            rateColor = "green"
+        }
+
         if (book.title.toUpperCase().includes(inputSearch.value.toUpperCase())) {
             if(bookStatus === "read") {
                 booksOutput.innerHTML += `<div class="card">
@@ -131,7 +150,7 @@ const searchBook = () => {
                             <div class="icon-${bookStatus}"></div> 
                         </span>
                     </span>
-                        <span class="book-rating">
+                        <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
                             Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
                         </span>
                         <span class="book-note">

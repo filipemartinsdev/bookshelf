@@ -44,7 +44,7 @@ export const booksList = [
         title: "Psicologia aplicada de Freud",
         author: "-",
         status: "read",
-        rating: "7.0",
+        rating: "7.2",
         note: "Apresenta influentes teses levantadas por Sigmund Freud com a Psicanálise."
     },
     {
@@ -60,7 +60,7 @@ export const booksList = [
         title: "Mais esperto que o Diabo",
         author: "Napoleon Hil",
         status: "read",
-        rating: "7.0",
+        rating: "6.9",
         note: ""
     },
     {
@@ -76,7 +76,7 @@ export const booksList = [
         title: "A revolução dos bichos",
         author: "George Orwell",
         status: "read",
-        rating: "8.5",
+        rating: "8.4",
         note: ""
     },
     {

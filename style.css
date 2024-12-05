@@ -302,11 +302,23 @@ main {
     display: flex;
     align-items: center;
     
+    cursor: pointer;
 }
+
 .icon-check {
-    color: rgba(7, 136, 42, 0.65);
+    /* color: rgba(7, 136, 42, 0.65); */
 }
     
+.rate-red{
+    color: red;
+}
+.rate-yellow{
+    color: rgb(234, 195, 1);
+}
+.rate-green{
+    color: #2ebd78;
+}
+
 .book-note {
     color: rgba(0, 0, 0, .5);
     font-size: 1.5rem;
