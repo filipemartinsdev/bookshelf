@@ -21,7 +21,7 @@ export const booksList = [
         author: "Chuck Palahniuk",
         status: "read",
         rating: "7.5",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: "A trama de um protagonista egocêntrico, babaca e sexólatra. Essa obra aborda a vida com uma visão dura e necessária em tempos contemporâneos."
     },
     {
         image: "./src/book-cavaleirodossetereinos.jpg",
@@ -29,7 +29,7 @@ export const booksList = [
         author: "George R.R. Martin",
         status: "read",
         rating: "8.5",
-        note: "Uma magnífica obra, ambientada no universo da Crônicas de Gelo e Fogo."
+        note: "Uma magnífica obra, ambientada no universo das Crônicas de Gelo e Fogo. A obra prende sua atenção em todo o tempo de leitura, abordando as lutas com uma narrativa impecável."
     },
     {
         image: "./src/book-1984.jpg",
@@ -37,7 +37,7 @@ export const booksList = [
         author: "George Orwell",
         status: "read",
         rating: "9.2",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: "Sem dúvida alguma, uma obra que deve ler lida antes de morrer. Contribui para o desenvolvimento de pensamento crítico, além de levantar importantes questionamentos sobre nossa sociedade, levando em consideração a história distópica retratada na obra."
     },
     {
         image: "./src/book-freud.webp",
@@ -45,7 +45,7 @@ export const booksList = [
         author: "-",
         status: "read",
         rating: "7.0",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: "Apresenta influentes teses levantadas por Sigmund Freud com a Psicanálise."
     },
     {
         image: "./src/book-admiravelmundonovo.jpeg",
@@ -53,7 +53,7 @@ export const booksList = [
         author: "Aldous Huxley",
         status: "read",
         rating: "9.0",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: 'Ao lado de "1984", é uma das obras mais influentes de toda a história. Tal qual a obra de George Orwell, também apresenta um mundo distópico moralmente questionável, com um protagonista deslocado da sociedade e em busca da verdade.'
     },
     {
         image: "./src/book-maisespertoqueodiabo.jpg",
@@ -61,7 +61,7 @@ export const booksList = [
         author: "Napoleon Hil",
         status: "read",
         rating: "7.0",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: ""
     },
     {
         image: "./src/book-veronikadecidemorrer.webp",
@@ -69,7 +69,7 @@ export const booksList = [
         author: "Paulo Coelho",
         status: "read",
         rating: "8.0",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: ""
     },
     {
         image: "./src/book-arevolucaodosbichos.jpg",
@@ -77,7 +77,7 @@ export const booksList = [
         author: "George Orwell",
         status: "read",
         rating: "8.5",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: ""
     },
     {
         image: "./src/book-jogadorn1.jpg",
@@ -85,7 +85,7 @@ export const booksList = [
         author: "Ernest Clins",
         status: "read",
         rating: "8.0",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: ""
     },
     {
         image: "./src/book-guiadomochileirodasgalaxias.jpeg",
@@ -93,6 +93,6 @@ export const booksList = [
         author: "Douglas Adams",
         status: "read",
         rating: "9.2",
-        note: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dignissimos doloremque iste a saepe nulla numquam veritatis vitae."
+        note: "Uma das melhores obras - se não a melhor - de Ficção ja escritas. Douglas Adams aborda sua trama de forma irônica e divertida, com personagens carismáticos e uma história memorável."
     },
 ]
