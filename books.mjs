@@ -5,7 +5,7 @@ export const booksList = [
         author: "Jackeline Wisnpear",
         status: "reading",
         rating: "-",
-        note: "Uma trama detetive, com a protagonista Maisie Dobbs."
+        note: ""
     },
     {
         image: "./src/book-aconvocacao.jpg",
