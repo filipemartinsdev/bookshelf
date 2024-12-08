@@ -61,7 +61,7 @@ export const booksList = [
         author: "Napoleon Hil",
         status: "read",
         rating: "6.9",
-        note: ""
+        note: "Essa obra argumenta sobre o impacto da fé e da positividade na vida de um indivíduo. Hill apresenta de forma excêntrica o conceito de medo na mente humana, em contraste com a fé individual."
     },
     {
         image: "./src/book-veronikadecidemorrer.webp",
