@@ -8,17 +8,19 @@ const containerReading = document.querySelector(".container-readingbooks");
 const displayBooks = () => {
     for (let book of booksList) {
         const bookStatus = book.status;
-        const rate = book.rating
+        const bookPublisher = book.publisher;
+        const bookPages = book.pages;
+        const rate = book.rating;
         let rateColor
-        if(rate < 5){
+        if (rate < 5) {
             rateColor = "red"
-        } else if(rate >= 4 && rate <= 7){
+        } else if (rate >= 4 && rate <= 7) {
             rateColor = "yellow"
-        } else if(rate > 7){
+        } else if (rate > 7) {
             rateColor = "green"
         }
 
-        if(bookStatus === "read") {
+        if (bookStatus === "read") {
             booksOutput.innerHTML += `
             <div class="card">
                 <div class="container-card-image">
@@ -26,29 +28,41 @@ const displayBooks = () => {
                 </div>
 
                 <div class="container-card-info">
-                    <span class="book-title">
-                        ${book.title}
-                    </span>
-                    <span class="book-author">
-                        ${book.author}
-                    </span>
-                    <span class="book-status">
-                        <span class="book-status-label">
-                            Status:
+                    <div class="container-book-top-info">
+                        <span class="book-title">
+                            ${book.title}
                         </span>
-                        <span class="book-status-response">
-                            ${bookStatus}  
-                            <div class="icon-${bookStatus}">✅</div> 
+                        <span class="book-author">
+                            ${book.author}
                         </span>
-                    </span>
-                    <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
-                        Rating: ${book.rating} 
-                    </span>
+                        <span class="book-publisher">
+                            Publisher ${bookPublisher}
+                        </span>
+                    </div>
+
+                    <div class="container-book-sub-info">
+                        <span>${bookPages} pages</span>            
+                    
+                        <div class="book-status">
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                ${bookStatus}  
+                                <div class="icon-${bookStatus}">✅</div> 
+                            </span>
+                        </div>
+
+                        <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
+                            Rating: ${book.rating} 
+                        </span>
+                    </div>
+
                     <span class="book-note">
                         ${book.note}
                     </span>
                 </div>`;
-        } else if( bookStatus === "unread") {
+        } else if (bookStatus === "unread") {
             booksOutput.innerHTML += `
             <div class="card">
                 <div class="container-card-image">
@@ -56,50 +70,65 @@ const displayBooks = () => {
                 </div>
 
                 <div class="container-card-info">
-                    <span class="book-title">
-                        ${book.title}
-                    </span>
-                    <span class="book-author">
-                        ${book.author}
-                    </span>
-                    <span class="book-status">
-                        <span class="book-status-label">
-                            Status:
+                    <div class="container-book-top-info">
+                        <span class="book-title">
+                            ${book.title}
                         </span>
-                        <span class="book-status-response">
-                            ${bookStatus}  
-                            <div class="icon-${bookStatus}">❌</div> 
+                        <span class="book-author">
+                            ${book.author}
                         </span>
-                    </span>
-                    <span class="book-note">
-                        ${book.note}
-                    </span>
-                </div>`
-        } else if( bookStatus === "reading"){
+                        <span class="book-publisher">
+                            Publisher ${bookPublisher}
+                        </span>
+                    </div>
+
+                    <div class="container-book-sub-info">
+                        <span>${bookPages} pages</span>            
+                    
+                        <div class="book-status">
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                ${bookStatus}  
+                                <div class="icon-${bookStatus}">❌</div> 
+                            </span>
+                        </div>
+                    </div>
+                </div>`;
+        } else if (bookStatus === "reading") {
             containerReading.innerHTML += `
             <div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
+
                 <div class="container-card-info">
-                    <span class="book-title">
-                        ${book.title}
-                    </span>
-                    <span class="book-author">
-                        ${book.author}
-                    </span>
-                    <span class="book-status">
-                        <span class="book-status-label">
-                            Status:
+                    <div class="container-book-top-info">
+                        <span class="book-title">
+                            ${book.title}
                         </span>
-                        <span class="book-status-response">
-                            ${bookStatus}  
-                            <div class="icon-${bookStatus}"></div> 
+                        <span class="book-author">
+                            ${book.author}
                         </span>
-                    </span>
-                    <span class="book-note">
-                        ${book.note}
-                    </span>
+                        <span class="book-publisher">
+                            Publisher ${bookPublisher}
+                        </span>
+                    </div>
+
+                    <div class="container-book-sub-info">
+                        <span>${bookPages} pages</span>            
+                    
+                        <div class="book-status">
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                ${bookStatus}  
+                                <div class="icon-${bookStatus}"></div> 
+                            </span>
+                        </div>
+                    </div>
                 </div>`;
         }
     }
@@ -119,16 +148,16 @@ const searchBook = () => {
 
         const rate = book.rating
         let rateColor
-        if(rate < 5){
+        if (rate < 5) {
             rateColor = "red"
-        } else if(rate >= 4 && rate <= 7){
+        } else if (rate >= 4 && rate <= 7) {
             rateColor = "yellow"
-        } else if(rate > 7){
+        } else if (rate > 7) {
             rateColor = "green"
         }
 
         if (book.title.toUpperCase().includes(inputSearch.value.toUpperCase())) {
-            if(bookStatus === "read") {
+            if (bookStatus === "read") {
                 booksOutput.innerHTML += `<div class="card">
                     <div class="container-card-image">
                         <img class="card-image" src="${book.image}" alt="book-image">
@@ -157,10 +186,10 @@ const searchBook = () => {
                             ${book.note}
                         </span>
                     </div>`;
-                }
+            }
 
-                if(bookStatus === "unread"){
-                    booksOutput.innerHTML += `<div class="card">
+            if (bookStatus === "unread") {
+                booksOutput.innerHTML += `<div class="card">
                     <div class="container-card-image">
                         <img class="card-image" src="${book.image}" alt="book-image">
                     </div>
@@ -185,10 +214,10 @@ const searchBook = () => {
                         ${book.note}
                         </span>
                     </div>`;
-                }
+            }
 
-                if(bookStatus === "reading") {
-                    booksOutput.innerHTML += `<div class="card">
+            if (bookStatus === "reading") {
+                booksOutput.innerHTML += `<div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
@@ -213,7 +242,7 @@ const searchBook = () => {
                         ${book.note}
                     </span>
                 </div>`;
-                }
+            }
 
             console.log(book.title)
             responseList.push(book.title)
