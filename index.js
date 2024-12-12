@@ -38,11 +38,11 @@ const displayBooks = () => {
                         </span>
                         <span class="book-status-response">
                             ${bookStatus}  
-                            <div class="icon-${bookStatus}"></div> 
+                            <div class="icon-${bookStatus}">✅</div> 
                         </span>
                     </span>
                     <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
-                        Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
+                        Rating: ${book.rating} 
                     </span>
                     <span class="book-note">
                         ${book.note}
@@ -68,7 +68,7 @@ const displayBooks = () => {
                         </span>
                         <span class="book-status-response">
                             ${bookStatus}  
-                            <div class="icon-${bookStatus}"></div> 
+                            <div class="icon-${bookStatus}">❌</div> 
                         </span>
                     </span>
                     <span class="book-note">
@@ -147,11 +147,11 @@ const searchBook = () => {
                             </span>
                             <span class="book-status-response">
                                 ${bookStatus}  
-                            <div class="icon-${bookStatus}"></div> 
+                            <div class="icon-${bookStatus}">✅</div> 
                         </span>
                     </span>
                         <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
-                            Rating: ${book.rating}<ion-icon class="icon-check" name="checkbox-outline"></ion-icon> 
+                            Rating: ${book.rating}
                         </span>
                         <span class="book-note">
                             ${book.note}
@@ -178,7 +178,7 @@ const searchBook = () => {
                             </span>
                             <span class="book-status-response">
                                 ${bookStatus}  
-                            <div class="icon-${bookStatus}"></div> 
+                            <div class="icon-${bookStatus}">❌</div> 
                         </span>
                         </span>
                         <span class="book-note">

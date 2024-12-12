@@ -254,10 +254,11 @@ main {
     gap: .5rem;
 }
 .book-status .icon-unread {
-    width: 1rem;
-    height: 1rem;
+    /* width: 1rem; */
+    /* height: 1rem; */
     border-radius: 99rem;
-    background-color: #dc4e49;
+    font-size: 1.4rem;
+    /* background-color: #dc4e49; */
     /* line-height: 0; */
     
     /* outline: 2px solid black; */
@@ -268,7 +269,7 @@ main {
         outline: 1px solid transparent;
     }
     75%{
-        outline: 4px solid rgba(127, 136, 239, .5);
+        outline: 5px solid rgba(127, 136, 239, .5);
     }
     100%{
         outline: 4px solid transparent;
@@ -287,10 +288,11 @@ main {
     animation-timing-function: ease-in-out;
 }
 .book-status .icon-read {
-    width: 1rem;
-    height: 1rem;
+    /* width: 1rem; */
+    /* height: 1rem; */
     border-radius: 99rem;
-    background-color: #2ebd78;
+    font-size: 1.4rem;
+    /* background-color: #2ebd78; */
     /* outline: 3px solid rgba(45, 153, 101, 0.3); */
     /* line-height: 0; */
 }
@@ -304,16 +306,12 @@ main {
     
     cursor: pointer;
 }
-
-.icon-check {
-    /* color: rgba(7, 136, 42, 0.65); */
-}
     
 .rate-red{
     color: red;
 }
 .rate-yellow{
-    color: rgb(234, 195, 1);
+    color: #E0CA3C;
 }
 .rate-green{
     color: #2ebd78;
