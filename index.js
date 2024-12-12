@@ -36,19 +36,19 @@ const displayBooks = () => {
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Publisher ${bookPublisher}
+                            Editora ${bookPublisher}
                         </span>
                     </div>
 
                     <div class="container-book-sub-info">
-                        <span>${bookPages} pages</span>            
+                        <span>${bookPages} Páginas</span>            
                     
                         <div class="book-status">
                             <span class="book-status-label">
                                 Status:
                             </span>
                             <span class="book-status-response">
-                                ${bookStatus}  
+                                Lido
                                 <div class="icon-${bookStatus}">✅</div> 
                             </span>
                         </div>
@@ -78,19 +78,19 @@ const displayBooks = () => {
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Publisher ${bookPublisher}
+                            Editora ${bookPublisher}
                         </span>
                     </div>
 
                     <div class="container-book-sub-info">
-                        <span>${bookPages} pages</span>            
+                        <span>${bookPages} Páginas</span>            
                     
                         <div class="book-status">
                             <span class="book-status-label">
                                 Status:
                             </span>
                             <span class="book-status-response">
-                                ${bookStatus}  
+                                Não lido
                                 <div class="icon-${bookStatus}">❌</div> 
                             </span>
                         </div>
@@ -112,19 +112,19 @@ const displayBooks = () => {
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Publisher ${bookPublisher}
+                            Editora ${bookPublisher}
                         </span>
                     </div>
 
                     <div class="container-book-sub-info">
-                        <span>${bookPages} pages</span>            
+                        <span>${bookPages} Páginas</span>            
                     
                         <div class="book-status">
                             <span class="book-status-label">
                                 Status:
                             </span>
                             <span class="book-status-response">
-                                ${bookStatus}  
+                                Lendo
                                 <div class="icon-${bookStatus}"></div> 
                             </span>
                         </div>
@@ -143,9 +143,12 @@ const searchBook = () => {
     const responseList = []
 
     for (let book of booksList) {
-        const bookStatus = book.status;
         containerReading.innerHTML = ""
 
+        const bookStatus = book.status;
+        const bookPublisher = book.publisher;
+        const bookPages = book.pages;
+        
         const rate = book.rating
         let rateColor
         if (rate < 5) {
@@ -158,89 +161,118 @@ const searchBook = () => {
 
         if (book.title.toUpperCase().includes(inputSearch.value.toUpperCase())) {
             if (bookStatus === "read") {
-                booksOutput.innerHTML += `<div class="card">
-                    <div class="container-card-image">
-                        <img class="card-image" src="${book.image}" alt="book-image">
-                    </div>
-
-                    <div class="container-card-info">
-                        <span class="book-title">
-                            ${book.title}
-                        </span>
-                        <span class="book-author">
-                            ${book.author}
-                        </span>
-                        <span class="book-status">
-                            <span class="book-status-label">
-                                Status:
-                            </span>
-                            <span class="book-status-response">
-                                ${bookStatus}  
-                            <div class="icon-${bookStatus}">✅</div> 
-                        </span>
-                    </span>
-                        <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
-                            Rating: ${book.rating}
-                        </span>
-                        <span class="book-note">
-                            ${book.note}
-                        </span>
-                    </div>`;
-            }
-
-            if (bookStatus === "unread") {
-                booksOutput.innerHTML += `<div class="card">
-                    <div class="container-card-image">
-                        <img class="card-image" src="${book.image}" alt="book-image">
-                    </div>
-    
-                    <div class="container-card-info">
-                        <span class="book-title">
-                            ${book.title}
-                        </span>
-                        <span class="book-author">
-                            ${book.author}
-                        </span>
-                        <span class="book-status">
-                            <span class="book-status-label">
-                                Status:
-                            </span>
-                            <span class="book-status-response">
-                                ${bookStatus}  
-                            <div class="icon-${bookStatus}">❌</div> 
-                        </span>
-                        </span>
-                        <span class="book-note">
-                        ${book.note}
-                        </span>
-                    </div>`;
-            }
-
-            if (bookStatus === "reading") {
-                booksOutput.innerHTML += `<div class="card">
+                booksOutput.innerHTML += `
+                <div class="card">
                 <div class="container-card-image">
                     <img class="card-image" src="${book.image}" alt="book-image">
                 </div>
 
                 <div class="container-card-info">
-                    <span class="book-title">
-                        ${book.title}
-                    </span>
-                    <span class="book-author">
-                        ${book.author}
-                    </span>
-                    <span class="book-status">
-                        <span class="book-status-label">
-                            Status:
+                    <div class="container-book-top-info">
+                        <span class="book-title">
+                            ${book.title}
                         </span>
-                        <span class="book-status-response">
-                            ${bookStatus}  
-                            <div class="icon-${bookStatus}"></div> 
+                        <span class="book-author">
+                            ${book.author}
                         </span>
-                    </span>
+                        <span class="book-publisher">
+                            Editora ${bookPublisher}
+                        </span>
+                    </div>
+
+                    <div class="container-book-sub-info">
+                        <span>${bookPages} Páginas</span>            
+                    
+                        <div class="book-status">
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                Lido
+                                <div class="icon-${bookStatus}">✅</div> 
+                            </span>
+                        </div>
+
+                        <span title="This is MY rating for this book." class="book-rating rate-${rateColor}">
+                            Rating: ${book.rating} 
+                        </span>
+                    </div>
+
                     <span class="book-note">
                         ${book.note}
                     </span>
+                </div>`;
+            }
+
+            if (bookStatus === "unread") {
+                booksOutput.innerHTML += `
+                <div class="card">
+                <div class="container-card-image">
+                    <img class="card-image" src="${book.image}" alt="book-image">
+                </div>
+
+                <div class="container-card-info">
+                    <div class="container-book-top-info">
+                        <span class="book-title">
+                            ${book.title}
+                        </span>
+                        <span class="book-author">
+                            ${book.author}
+                        </span>
+                        <span class="book-publisher">
+                            Editora ${bookPublisher}
+                        </span>
+                    </div>
+
+                    <div class="container-book-sub-info">
+                        <span>${bookPages} Páginas</span>            
+                    
+                        <div class="book-status">
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                Não lido
+                                <div class="icon-${bookStatus}">❌</div> 
+                            </span>
+                        </div>
+                    </div>
+                </div>`;
+            }
+
+            if (bookStatus === "reading") {
+                booksOutput.innerHTML += `
+                <div class="card">
+                <div class="container-card-image">
+                    <img class="card-image" src="${book.image}" alt="book-image">
+                </div>
+
+                <div class="container-card-info">
+                    <div class="container-book-top-info">
+                        <span class="book-title">
+                            ${book.title}
+                        </span>
+                        <span class="book-author">
+                            ${book.author}
+                        </span>
+                        <span class="book-publisher">
+                            Editora ${bookPublisher}
+                        </span>
+                    </div>
+
+                    <div class="container-book-sub-info">
+                        <span>${bookPages} Páginas</span>            
+                    
+                        <div class="book-status">
+                            <span class="book-status-label">
+                                Status:
+                            </span>
+                            <span class="book-status-response">
+                                Lendo
+                                <div class="icon-${bookStatus}"></div> 
+                            </span>
+                        </div>
+                    </div>
                 </div>`;
             }
 
