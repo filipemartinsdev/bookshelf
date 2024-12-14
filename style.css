@@ -123,6 +123,12 @@ main {
 
     /* background-color: rgba(255, 255, 255, .8); */
     background: linear-gradient(90deg, rgb(58, 63, 81), rgb(50, 50, 50));
+    transition: scale .2s;
+}
+.button-search:hover{
+    /* border: 2px solid white; */
+    scale: 1.06;
+    filter: brightness(1.2);
 }
 .button-search .icon-search {
     color: var(--color-light2);
