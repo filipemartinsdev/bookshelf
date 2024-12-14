@@ -1,7 +1,7 @@
 :root {
     font-size: 10px;
 
-    --color-dark1: #231C2F;
+    --color-dark1: rgb(35, 28, 47);
     --color-dark2: #3F384C;
 
     --color-light1: rgb(247, 247, 247);
@@ -166,6 +166,7 @@ main {
 .card {
     overflow: hidden;
     background-color: white;
+    background: linear-gradient(90deg, rgba(35, 28, 47, .15), white 50%);
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 1rem;
     padding: 2rem;
@@ -199,7 +200,7 @@ main {
     width: 100%;
     height: 20rem;
     border-radius: .5rem;
-    border: 1px solid rgba(0, 0, 0, .2);       
+    border: 1px solid rgba(0, 0, 0, .3);       
 }
 
 .container-card-info {
