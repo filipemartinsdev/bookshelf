@@ -1,12 +1,22 @@
 export const booksList = [
     {
+        image: "./src/book-coragemdeexistir.jpg",
+        title: "Coragem de existir",
+        author: "Matheus Jacob",
+        publisher:"Buzz",
+        pages: "103",
+        status: "reading",
+        rating: "",
+        note: "",
+    },
+    {
         image: "./src/book-maisiedobbs.jpeg",
         title: "Maisie Dobbs",
         author: "Jackeline Wisnpear",
         publisher:"Arqueiro",
         pages: "285",
         status: "read",
-        rating: "8.2",
+        rating: "8.0",
         note: "",
     },
     {
