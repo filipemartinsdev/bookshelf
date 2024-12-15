@@ -5,7 +5,7 @@ export const booksList = [
         author: "Jackeline Wisnpear",
         publisher:"Arqueiro",
         pages: "285",
-        status: "reading",
+        status: "read",
         rating: "8.2",
         note: "",
     },
