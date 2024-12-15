@@ -6,7 +6,7 @@ export const booksList = [
         publisher:"Arqueiro",
         pages: "285",
         status: "reading",
-        rating: "-",
+        rating: "8.2",
         note: "",
     },
     {
