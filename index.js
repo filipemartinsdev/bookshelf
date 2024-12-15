@@ -58,9 +58,12 @@ const displayBooks = () => {
                         </span>
                     </div>
 
-                    <span class="book-note">
-                        ${book.note}
-                    </span>
+                    <div class="container-card-footer">
+                        <button class="button-read-more">
+                            Ver mais
+                            <ion-icon class="icon-expand" name="expand-outline"></ion-icon> 
+                        </button>
+                    </div>
                 </div>`;
         } else if (bookStatus === "unread") {
             booksOutput.innerHTML += `
@@ -198,9 +201,9 @@ const searchBook = () => {
                         </span>
                     </div>
 
-                    <span class="book-note">
-                        ${book.note}
-                    </span>
+                    <div class="container-card-footer">
+                        <button class="button-read-more">Ler mais</button>
+                    </div>
                 </div>`;
             }
 
