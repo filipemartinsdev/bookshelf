@@ -134,7 +134,7 @@ export const booksList = [
     {
         image: "./src/book-guiadomochileirodasgalaxias.jpeg",
         title: "O Guia do mochileiro das galáxias",
-        subtitle: "",
+        subtitle: "- Todos os volumes.",
         author: "Douglas Adams",
         publisher:"Arqueiro",
         pages: "672",
