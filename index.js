@@ -32,11 +32,14 @@ const displayBooks = () => {
                         <span class="book-title">
                             ${book.title}
                         </span>
+                        <span class="book-subtitle">
+                            ${book.subtitle}
+                        </span>
                         <span class="book-author">
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Editora ${bookPublisher}
+                            Editora ${book.publisher}
                         </span>
                     </div>
 
@@ -74,11 +77,14 @@ const displayBooks = () => {
                         <span class="book-title">
                             ${book.title}
                         </span>
+                        <span class="book-subtitle">
+                            ${book.subtitle}
+                        </span>
                         <span class="book-author">
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Editora ${bookPublisher}
+                            Editora ${book.publisher}
                         </span>
                     </div>
 
@@ -108,11 +114,14 @@ const displayBooks = () => {
                         <span class="book-title">
                             ${book.title}
                         </span>
+                        <span class="book-subtitle">
+                            ${book.subtitle}
+                        </span>
                         <span class="book-author">
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Editora ${bookPublisher}
+                            Editora ${book.publisher}
                         </span>
                     </div>
 
@@ -172,11 +181,14 @@ const searchBook = () => {
                         <span class="book-title">
                             ${book.title}
                         </span>
+                        <span class="book-subtitle">
+                            ${book.subtitle}
+                        </span>
                         <span class="book-author">
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Editora ${bookPublisher}
+                            Editora ${book.publisher}
                         </span>
                     </div>
 
@@ -216,11 +228,14 @@ const searchBook = () => {
                         <span class="book-title">
                             ${book.title}
                         </span>
+                        <span class="book-subtitle">
+                            ${book.subtitle}
+                        </span>
                         <span class="book-author">
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Editora ${bookPublisher}
+                            Editora ${book.publisher}
                         </span>
                     </div>
 
@@ -252,11 +267,14 @@ const searchBook = () => {
                         <span class="book-title">
                             ${book.title}
                         </span>
+                        <span class="book-subtitle">
+                            ${book.subtitle}
+                        </span>
                         <span class="book-author">
                             ${book.author}
                         </span>
                         <span class="book-publisher">
-                            Editora ${bookPublisher}
+                            Editora ${book.publisher}
                         </span>
                     </div>
 

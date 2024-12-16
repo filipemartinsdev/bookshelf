@@ -2,6 +2,7 @@ export const booksList = [
     {
         image: "./src/book-coragemdeexistir.jpg",
         title: "Coragem de existir",
+        subtitle: "Por uma vida digna de ser vivida.",
         author: "Matheus Jacob",
         publisher:"Buzz",
         pages: "103",
@@ -12,6 +13,7 @@ export const booksList = [
     {
         image: "./src/book-maisiedobbs.jpeg",
         title: "Maisie Dobbs",
+        subtitle: "",
         author: "Jackeline Wisnpear",
         publisher:"Arqueiro",
         pages: "285",
@@ -22,6 +24,7 @@ export const booksList = [
     {
         image: "./src/book-aconvocacao.jpg",
         title: "A convocação",
+        subtitle: "",
         author: "Peadar O'Guilin",
         publisher:"Melhoramentos",
         pages: "271",
@@ -32,6 +35,7 @@ export const booksList = [
     {
         image: "./src/book-nosufoco.jpg",
         title: "No sufoco",
+        subtitle: "",
         author: "Chuck Palahniuk",
         publisher:"Leya",
         pages: "271",
@@ -42,6 +46,7 @@ export const booksList = [
     {
         image: "./src/book-cavaleirodossetereinos.jpg",
         title: "O Cavaleiro dos sete reinos",
+        subtitle: "",
         author: "George R.R. Martin",
         publisher:"Leya",
         pages: "413",
@@ -52,6 +57,7 @@ export const booksList = [
     {
         image: "./src/book-1984.jpg",
         title: "1984",
+        subtitle: "",
         author: "George Orwell",
         publisher:"Leya",
         pages: "319",
@@ -62,6 +68,7 @@ export const booksList = [
     {
         image: "./src/book-freud.webp",
         title: "Psicologia aplicada de Freud",
+        subtitle: "",
         author: "",
         publisher:"Prime",
         pages: "126",
@@ -72,6 +79,7 @@ export const booksList = [
     {
         image: "./src/book-admiravelmundonovo.jpeg",
         title: "Admirável mundo novo",
+        subtitle: "",
         author: "Aldous Huxley",
         publisher: "Biblioteca Azul",
         pages: "312",
@@ -82,6 +90,7 @@ export const booksList = [
     {
         image: "./src/book-maisespertoqueodiabo.jpg",
         title: "Mais esperto que o Diabo",
+        subtitle: "",
         author: "Napoleon Hil",
         publisher:"Citadel",
         pages: "208",
@@ -92,6 +101,7 @@ export const booksList = [
     {
         image: "./src/book-veronikadecidemorrer.webp",
         title: "Veronika decide morrer",
+        subtitle: "",
         author: "Paulo Coelho",
         publisher:"Gold",
         pages: "240",
@@ -102,6 +112,7 @@ export const booksList = [
     {
         image: "./src/book-arevolucaodosbichos.jpg",
         title: "A revolução dos bichos",
+        subtitle: "",
         author: "George Orwell",
         publisher:"Leya",
         pages: "319",
@@ -112,6 +123,7 @@ export const booksList = [
     {
         image: "./src/book-jogadorn1.jpg",
         title: "Jogador número 1",
+        subtitle: "",
         author: "Ernest Clins",
         publisher:"Leya",
         pages: "462",
@@ -122,6 +134,7 @@ export const booksList = [
     {
         image: "./src/book-guiadomochileirodasgalaxias.jpeg",
         title: "O Guia do mochileiro das galáxias",
+        subtitle: "",
         author: "Douglas Adams",
         publisher:"Arqueiro",
         pages: "672",

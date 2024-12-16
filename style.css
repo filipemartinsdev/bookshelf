@@ -234,6 +234,12 @@ main {
     font-size: 2.2rem; 
     margin-bottom: .6rem;
 }
+.container-book-top-info .book-subtitle {
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    margin-bottom: .5rem;
+}
 
 .container-book-top-info .book-publisher {
     font-size: 1.4rem;
