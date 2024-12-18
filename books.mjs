@@ -9,6 +9,7 @@ export const booksList = [
         status: "reading",
         rating: "",
         note: "",
+        id: 0
     },
     {
         image: "./src/book-maisiedobbs.jpeg",
@@ -20,6 +21,7 @@ export const booksList = [
         status: "read",
         rating: "8.0",
         note: "",
+        id: 1
     },
     {
         image: "./src/book-aconvocacao.jpg",
@@ -30,7 +32,8 @@ export const booksList = [
         pages: "271",
         status: "unread",//
         rating: "-",
-        note: ""
+        note: "",
+        id: 2
     },
     {
         image: "./src/book-nosufoco.jpg",
@@ -41,7 +44,8 @@ export const booksList = [
         pages: "271",
         status: "read",
         rating: "7.5",
-        note: "A trama de um protagonista egocêntrico, babaca e sexólatra. Essa obra aborda a vida com uma visão dura e necessária em tempos contemporâneos."
+        note: "A trama de um protagonista egocêntrico, babaca e sexólatra. Essa obra aborda a vida com uma visão dura e necessária em tempos contemporâneos.",
+        id: 3
     },
     {
         image: "./src/book-cavaleirodossetereinos.jpg",
@@ -52,7 +56,8 @@ export const booksList = [
         pages: "413",
         status: "read",
         rating: "8.5",
-        note: "Uma magnífica obra, ambientada no universo das Crônicas de Gelo e Fogo. A obra prende sua atenção em todo o tempo de leitura, abordando as lutas com uma narrativa impecável."
+        note: "Uma magnífica obra, ambientada no universo das Crônicas de Gelo e Fogo. A obra prende sua atenção em todo o tempo de leitura, abordando as lutas com uma narrativa impecável.",
+        id: 4
     },
     {
         image: "./src/book-1984.jpg",
@@ -63,7 +68,8 @@ export const booksList = [
         pages: "319",
         status: "read",
         rating: "9.2",
-        note: "Sem dúvida alguma, uma obra que deve ler lida antes de morrer. Contribui para o desenvolvimento de pensamento crítico, além de levantar importantes questionamentos sobre nossa sociedade, levando em consideração a história distópica retratada na obra."
+        note: "Sem dúvida alguma, uma obra que deve ler lida antes de morrer. Contribui para o desenvolvimento de pensamento crítico, além de levantar importantes questionamentos sobre nossa sociedade, levando em consideração a história distópica retratada na obra.",
+        id: 5
     },
     {
         image: "./src/book-freud.webp",
@@ -74,7 +80,8 @@ export const booksList = [
         pages: "126",
         status: "read",
         rating: "7.2",
-        note: "Apresenta influentes teses levantadas por Sigmund Freud com a Psicanálise."
+        note: "Apresenta influentes teses levantadas por Sigmund Freud com a Psicanálise.",
+        id: 6
     },
     {
         image: "./src/book-admiravelmundonovo.jpeg",
@@ -85,7 +92,8 @@ export const booksList = [
         pages: "312",
         status: "read",
         rating: "9.0",
-        note: 'Ao lado de "1984", é uma das obras mais influentes de toda a história. Tal qual a obra de George Orwell, também apresenta um mundo distópico moralmente questionável, com um protagonista deslocado da sociedade e em busca da verdade.'
+        note: 'Ao lado de "1984", é uma das obras mais influentes de toda a história. Tal qual a obra de George Orwell, também apresenta um mundo distópico moralmente questionável, com um protagonista deslocado da sociedade e em busca da verdade.',
+        id: 7
     },
     {
         image: "./src/book-maisespertoqueodiabo.jpg",
@@ -96,7 +104,8 @@ export const booksList = [
         pages: "208",
         status: "read",
         rating: "6.9",
-        note: "Essa obra argumenta sobre o impacto da fé e da positividade na vida de um indivíduo. Hill apresenta de forma excêntrica o conceito de medo na mente humana, em contraste com a fé individual."
+        note: "Essa obra argumenta sobre o impacto da fé e da positividade na vida de um indivíduo. Hill apresenta de forma excêntrica o conceito de medo na mente humana, em contraste com a fé individual.",
+        id: 8
     },
     {
         image: "./src/book-veronikadecidemorrer.webp",
@@ -107,7 +116,8 @@ export const booksList = [
         pages: "240",
         status: "read",
         rating: "8.0",
-        note: ""
+        note: "",
+        id: 9
     },
     {
         image: "./src/book-arevolucaodosbichos.jpg",
@@ -118,7 +128,8 @@ export const booksList = [
         pages: "319",
         status: "read",
         rating: "8.4",
-        note: ""
+        note: "",
+        id: 10
     },
     {
         image: "./src/book-jogadorn1.jpg",
@@ -129,7 +140,8 @@ export const booksList = [
         pages: "462",
         status: "read",
         rating: "8.0",
-        note: ""
+        note: "",
+        id: 11
     },
     {
         image: "./src/book-guiadomochileirodasgalaxias.jpeg",
@@ -140,6 +152,7 @@ export const booksList = [
         pages: "672",
         status: "read",
         rating: "9.2",
-        note: "Uma das melhores obras - se não a melhor - de Ficção ja escritas. Douglas Adams aborda sua trama de forma irônica e divertida, com personagens carismáticos e uma história memorável."
+        note: "Uma das melhores obras - se não a melhor - de Ficção ja escritas. Douglas Adams aborda sua trama de forma irônica e divertida, com personagens carismáticos e uma história memorável.",
+        id: 12
     },
 ]

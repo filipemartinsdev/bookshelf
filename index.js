@@ -61,9 +61,12 @@ const displayBooks = () => {
                         </span>
                     </div>
 
-                    <span class="book-note">
-                        ${book.note}
-                    </span>
+                    <div class="container-card-footer">
+                        <button class="button-read-more" id="${book.id}">
+                            Ver mais
+                            <ion-icon class="icon-expand" name="expand-outline"></ion-icon> 
+                        </button>
+                    </div>
                 </div>`;
         } else if (bookStatus === "unread") {
             booksOutput.innerHTML += `
@@ -210,9 +213,9 @@ const searchBook = () => {
                         </span>
                     </div>
 
-                    <span class="book-note">
-                        ${book.note}
-                    </span>
+                    <div class="container-card-footer">
+                        <button class="button-read-more" id="${book.id}">Ler mais</button>
+                    </div>
                 </div>`;
             }
 
@@ -301,7 +304,7 @@ const searchBook = () => {
     console.log("end")
 
     if (responseList.length === 0) {
-        console.log("No response")
+        // console.log("No response")
 
         booksOutput.innerHTML = `
             <div class="card-booksfound">
@@ -314,8 +317,8 @@ const searchBook = () => {
 }
 
 const eventKeyHandle = (event) => {
-    console.clear()
-    console.log(event)
+    // console.clear()
+    // console.log(event)
     if (event.key === "Enter") {
         if (document.activeElement === inputSearch) {
             searchBook(inputSearch.value)
@@ -323,5 +326,13 @@ const eventKeyHandle = (event) => {
     }
 }
 
+const buttonReadMore = document.querySelectorAll(".button-read-more");
+
+// buttonReadMore.addEventListener("click", openCard)
+// console.log(buttonReadMore)
+
+for(let i of buttonReadMore){
+    // i.addEventListener("click", enterCard)
+}
 searchButton.addEventListener("click", searchBook)
 document.addEventListener("keydown", eventKeyHandle)
