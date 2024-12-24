@@ -28,8 +28,8 @@ export const booksList = [
         author: "Matheus Jacob",
         publisher:"Buzz",
         pages: "103",
-        status: "reading",
-        rating: "",
+        status: "read",
+        rating: "8.0",
         note: "",
     },
     {
@@ -61,8 +61,8 @@ export const booksList = [
         author: "Peadar O'Guilin",
         publisher:"Melhoramentos",
         pages: "271",
-        status: "unread",//
-        rating: "-",
+        status: "reading",//
+        rating: "",
         note: "",
     },
     {
