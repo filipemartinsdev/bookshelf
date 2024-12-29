@@ -1,7 +1,7 @@
 import { booksList } from "./books.mjs";
 
-const inputSearch = document.querySelector(".input-search")
-const searchButton = document.querySelector(".button-search")
+const inputSearch = document.querySelector(".input-search");
+const searchButton = document.querySelector(".button-search");
 const booksOutput = document.querySelector(".container-cards");
 const containerReading = document.querySelector(".container-readingbooks");
 
@@ -11,13 +11,15 @@ const displayBooks = () => {
         const bookPublisher = book.publisher;
         const bookPages = book.pages;
         const rate = book.rating;
-        let rateColor
+        let rateColor;
         if (rate < 5) {
-            rateColor = "red"
-        } else if (rate >= 4 && rate <= 7) {
-            rateColor = "yellow"
-        } else if (rate > 7) {
-            rateColor = "green"
+            rateColor = "red";
+        }
+        else if (rate >= 4 && rate <= 7) {
+            rateColor = "yellow";
+        }
+        else if (rate > 7) {
+            rateColor = "green";
         }
 
         if (bookStatus === "read") {
@@ -68,7 +70,8 @@ const displayBooks = () => {
                         </button>
                     </div>
                 </div>`;
-        } else if (bookStatus === "unread") {
+        }
+        else if (bookStatus === "unread") {
             booksOutput.innerHTML += `
             <div class="card">
                 <div class="container-card-image">
@@ -105,7 +108,8 @@ const displayBooks = () => {
                         </div>
                     </div>
                 </div>`;
-        } else if (bookStatus === "reading") {
+        }
+        else if (bookStatus === "reading") {
             containerReading.innerHTML += `
             <div class="card">
                 <div class="container-card-image">
@@ -149,26 +153,28 @@ const displayBooks = () => {
 displayBooks()
 
 const searchBook = () => {
-    console.clear()
-    console.log("searching")
-    booksOutput.innerHTML = ''
-    const responseList = []
+    console.clear();
+    console.log("searching");
+    booksOutput.innerHTML = '';
+    const responseList = [];
 
     for (let book of booksList) {
-        containerReading.innerHTML = ""
+        containerReading.innerHTML = "";
 
         const bookStatus = book.status;
         const bookPublisher = book.publisher;
         const bookPages = book.pages;
-        
-        const rate = book.rating
-        let rateColor
+
+        const rate = book.rating;
+        let rateColor;
         if (rate < 5) {
-            rateColor = "red"
-        } else if (rate >= 4 && rate <= 7) {
-            rateColor = "yellow"
-        } else if (rate > 7) {
-            rateColor = "green"
+            rateColor = "red";
+        }
+        else if (rate >= 4 && rate <= 7) {
+            rateColor = "yellow";
+        }
+        else if (rate > 7) {
+            rateColor = "green";
         }
 
         if (book.title.toUpperCase().includes(inputSearch.value.toUpperCase())) {
@@ -218,7 +224,6 @@ const searchBook = () => {
                     </div>
                 </div>`;
             }
-
             if (bookStatus === "unread") {
                 booksOutput.innerHTML += `
                 <div class="card">
@@ -257,7 +262,6 @@ const searchBook = () => {
                     </div>
                 </div>`;
             }
-
             if (bookStatus === "reading") {
                 booksOutput.innerHTML += `
                 <div class="card">
@@ -297,8 +301,8 @@ const searchBook = () => {
                 </div>`;
             }
 
-            console.log(book.title)
-            responseList.push(book.title)
+            console.log(book.title);
+            responseList.push(book.title);
         }
     }
     console.log("end")
@@ -317,22 +321,22 @@ const searchBook = () => {
 }
 
 const eventKeyHandle = (event) => {
-    // console.clear()
-    // console.log(event)
+    // console.clear();
+    // console.log(event);
     if (event.key === "Enter") {
         if (document.activeElement === inputSearch) {
-            searchBook(inputSearch.value)
+            searchBook(inputSearch.value);
         }
     }
 }
 
 const buttonReadMore = document.querySelectorAll(".button-read-more");
 
-// buttonReadMore.addEventListener("click", openCard)
-// console.log(buttonReadMore)
+// buttonReadMore.addEventListener("click", openCard);
+// console.log(buttonReadMore);
 
-for(let i of buttonReadMore){
-    // i.addEventListener("click", enterCard)
+for (let i of buttonReadMore) {
+    // i.addEventListener("click", enterCard);
 }
-searchButton.addEventListener("click", searchBook)
-document.addEventListener("keydown", eventKeyHandle)
+searchButton.addEventListener("click", searchBook);
+document.addEventListener("keydown", eventKeyHandle);

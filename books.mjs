@@ -1,5 +1,16 @@
 export const booksList = [
     {
+        image: "./src/book-aconvocacao.jpg",
+        title: "A convocação",
+        subtitle: "",
+        author: "Peadar O'Guilin",
+        publisher:"Melhoramentos",
+        pages: "271",
+        status: "read",//
+        rating: "8.2",
+        note: "",
+    },
+    {
         image: "./src/book-adivinacomediainferno.jpg",
         title: "A divina comédia",
         subtitle: "Inferno",
@@ -52,17 +63,6 @@ export const booksList = [
         pages: "285",
         status: "read",
         rating: "8.0",
-        note: "",
-    },
-    {
-        image: "./src/book-aconvocacao.jpg",
-        title: "A convocação",
-        subtitle: "",
-        author: "Peadar O'Guilin",
-        publisher:"Melhoramentos",
-        pages: "271",
-        status: "reading",//
-        rating: "",
         note: "",
     },
     {
