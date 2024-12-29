@@ -1,5 +1,16 @@
 export const booksList = [
     {
+        image: "./src/book-essencialismo.jpg",
+        title: "Essencialismo",
+        subtitle: "A disciplina busca por menos",
+        author: "Greg McKeown",
+        publisher:"Sextance",
+        pages: "268",
+        status: "reading",//
+        rating: "",
+        note: "",
+    },
+    {
         image: "./src/book-aconvocacao.jpg",
         title: "A convocação",
         subtitle: "",
