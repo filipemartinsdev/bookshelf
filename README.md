@@ -12,4 +12,4 @@ A "Exposição virtual" dos meus livros serve como meu treino/estudo com as segu
   - Classes utilitárias
   - Animações
 
-![image](https://github.com/user-attachments/assets/7fd063d2-50f1-4820-bf52-7f8cf318a8b7)
+![image](https://github.com/user-attachments/assets/6b1c7dd5-3a84-4c6a-8649-ac145fc8c1f2)
