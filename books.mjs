@@ -6,6 +6,28 @@ export const booksList = [
         author: "Greg McKeown",
         publisher:"Sextance",
         pages: "268",
+        status: "read",//
+        rating: "9.5",
+        note: "",
+    },
+    {
+        image: "./src/book-inventealgumacoisa.jpg",
+        title: "Invente alguma coisa",
+        subtitle: "",
+        author: "Chuck Palahniuk",
+        publisher:"Leya",
+        pages: "335",
+        status: "unread",//
+        rating: "",
+        note: "",
+    },
+    {
+        image: "./src/book-ainvasao.jpg",
+        title: "A invasão",
+        subtitle: "Terra Gris II",
+        author: "Peadar O'Guilin",
+        publisher:"Melhoramentos",
+        pages: "288",
         status: "reading",//
         rating: "",
         note: "",
@@ -13,7 +35,7 @@ export const booksList = [
     {
         image: "./src/book-aconvocacao.jpg",
         title: "A convocação",
-        subtitle: "",
+        subtitle: "Terra Gris I",
         author: "Peadar O'Guilin",
         publisher:"Melhoramentos",
         pages: "271",
