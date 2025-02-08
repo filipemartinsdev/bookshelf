@@ -72,7 +72,7 @@ export const booksList = [
         author: "Dante Alighieri",
         publisher:"Novo Século",
         pages: "335",
-        status: "unread",
+        status: "reading",
         rating: "",
         note: "",
     },
