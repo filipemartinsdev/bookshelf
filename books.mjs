@@ -1,5 +1,27 @@
 export const booksList = [
     {
+        image: "./src/book-aeraimoral.jpg",
+        title: "A era imoral",
+        subtitle: "",
+        author: "Deepti Kapoor",
+        publisher:"intrínseca",
+        pages: "557",
+        status: "unread",//
+        rating: "",
+        note: "",
+    },
+    {
+        image: "./src/book-umajornadaparaarcturus.jpg",
+        title: "Uma jornada para Arcturus",
+        subtitle: "",
+        author: "David Lindsay",
+        publisher:"Novo século",
+        pages: "287",
+        status: "unread",//
+        rating: "",
+        note: "",
+    },
+    {
         image: "./src/book-essencialismo.jpg",
         title: "Essencialismo",
         subtitle: "A disciplina busca por menos",
@@ -28,8 +50,8 @@ export const booksList = [
         author: "Peadar O'Guilin",
         publisher:"Melhoramentos",
         pages: "288",
-        status: "reading",//
-        rating: "",
+        status: "read",//
+        rating: "7.4",
         note: "",
     },
     {
