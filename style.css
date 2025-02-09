@@ -255,6 +255,7 @@ main {
 
 .container-book-top-info .book-title {
     color: rgba(0, 0, 0, .65);
+    font-variant: small-caps;
     line-height: 2rem;
     font-size: 2.2rem; 
     margin-bottom: .6rem;
