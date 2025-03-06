@@ -1,15 +1,35 @@
 # 📖 Bookshelf
 
-## 📌 Sobre
-Um projeto pessoal, com o objetivo de criar uma página interativa listando os meus livros e suas respectivas informações.
-A "Exposição virtual" dos livros serve como meu treino/estudo com as seguintes tectologias:
-- JavaScript
-  - Programação Orientada a Objetos
-  - Futura migração com arquivos JSON ou alguma API
-- GIT
-  - Principais comandos de versionamento
-- CSS
-  - Classes utilitárias
-  - Animações
+## Sobre
+Esse projeto pessoal é uma página que lista todos os meus livros e suas respectivas informações, assim como:
+- Dados do livro ( capa, titulo, autor, etc )
+- Status de leitura ( lido, não lido e lendo )
 
-![image](https://github.com/user-attachments/assets/6b1c7dd5-3a84-4c6a-8649-ac145fc8c1f2)
+## Stack
+- HTML, CSS
+- JavaScript
+- Git
+
+## Arquitetura
+A Listagem e pesquisa de livros é feita por meio de iteração no objeto booksList no arquivo books.mjs.
+A cada iteração é verificado se o titulo do livro atual tem relação com o texto pesquisado ( em caso de nao haver pesquisa, o valor é "" ).
+
+Ainda não fiz nenhuma integração com arquivos JSON ou alguma API, mas pretendo. Portanto, o código ainda está bem rústico.
+
+## Hospedagem
+Github Pages & Vercel.
+
+## To-Do List
+- [x] Algoritmo para motrar todos os livros
+- [x] Barra de pesquisa funcional
+- [x] Responsividade
+- [ ] Modularização do código
+- [ ] Feature de pesquisa por categoria / filtro
+- [ ] Feature "Leia mais"
+  - Possibilidade de abrir cada card para a visualização de todas as informações do livro.
+- [ ] Integração com API
+
+## Ultimas alterações
+- Refatoração: 60% menos código. SIM, muita coisa!
+
+  
