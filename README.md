@@ -30,6 +30,6 @@ Github Pages & Vercel.
 - [ ] Integração com API
 
 ## 📮 Ultimas alterações
-- Refatoração: 60% menos código. SIM, muita coisa!
+- Refatoração: 60% menos código. Sim, muita coisa! Havia muito HTML no arquivo JavaScript.
 
   
