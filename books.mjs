@@ -6,7 +6,7 @@ export const booksList = [
         author: "Deepti Kapoor",
         publisher:"intrínseca",
         pages: "557",
-        status: "unread",//
+        status: "reading",//
         rating: "",
         note: "",
     },
@@ -72,7 +72,7 @@ export const booksList = [
         author: "Dante Alighieri",
         publisher:"Novo Século",
         pages: "335",
-        status: "reading",
+        status: "read",
         rating: "",
         note: "",
     },
