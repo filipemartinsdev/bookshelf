@@ -1,0 +1,12 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "Esse projeto pessoal é uma página que lista todos os meus livros e suas respectivas informações, assim como:\r - Dados do livro ( capa, titulo, autor, etc )\r - Status de leitura ( lido, não lido e lendo )",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
