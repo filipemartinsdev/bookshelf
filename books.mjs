@@ -106,7 +106,7 @@ export const booksList = [
         publisher:"Novo Século",
         pages: "335",
         status: "read",
-        rating: "",
+        rating: "8.5",
         note: "",
     },
     {
