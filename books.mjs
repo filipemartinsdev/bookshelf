@@ -1,5 +1,27 @@
 export const booksList = [
     {
+        image: "./src/book-entendendoalgoritmos.png",
+        title: "Entendendo algoritmos",
+        subtitle: "Um guia ilustrado para programadores e outros curiosos",
+        author: "Aditya Y. Bhargava",
+        publisher:"Casa do Código",
+        pages: "322",
+        status: "unread",//
+        rating: "",
+        note: "",
+    },
+    {
+        image: "./src/book-postgresql.png",
+        title: "PostgreSQL",
+        subtitle: "",
+        author: "Vicícius Carvalho",
+        publisher:"Casa do Código",
+        pages: "216",
+        status: "unread",//
+        rating: "",
+        note: "",
+    },
+    {
         image: "./src/book-javacomoprogramar.png",
         title: "Java: Como programar",
         subtitle: "Edição 8 - PtBr",
