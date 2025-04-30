@@ -1,5 +1,16 @@
 export const booksList = [
     {
+        image: "./src/book-javacomoprogramar.png",
+        title: "Java: Como programar",
+        subtitle: "Edição 8 - PtBr",
+        author: "Paul Deitel",
+        publisher:"Pearson",
+        pages: "1280",
+        status: "reading",//
+        rating: "",
+        note: "",
+    },
+    {
         image: "./src/book-aeraimoral.jpg",
         title: "A era imoral",
         subtitle: "",
